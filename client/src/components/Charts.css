@@ -1,0 +1,25 @@
+.chart-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  font-size: 1.1rem;
+}

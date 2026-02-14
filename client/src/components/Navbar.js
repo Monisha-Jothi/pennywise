@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -16,17 +15,30 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">💰 PennyWise</Link>
+        <Link to="/" className="nav-logo">
+          💰 PennyWise
+        </Link>
+
         {isAuthenticated ? (
           <div className="nav-menu">
-            <Link to="/dashboard" className="nav-link">Dashboard</Link>
-            <span className="user-name">👤 {user?.name}</span>
-            <button onClick={handleLogout} className="logout-btn">Logout</button>
+            <Link to="/dashboard" className="nav-link">
+              Dashboard
+            </Link>
+            <div className="nav-user">
+              <span className="user-name">👤 {user?.name}</span>
+              <button onClick={handleLogout} className="logout-btn">
+                Logout
+              </button>
+            </div>
           </div>
         ) : (
           <div className="nav-menu">
-            <Link to="/login" className="nav-link">Login</Link>
-            <Link to="/register" className="nav-link-primary">Register</Link>
+            <Link to="/login" className="nav-link">
+              Login
+            </Link>
+            <Link to="/register" className="nav-link-primary">
+              Register
+            </Link>
           </div>
         )}
       </div>

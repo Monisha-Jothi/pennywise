@@ -1,0 +1,131 @@
+.transaction-list-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.transactions-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.transaction-item:hover {
+  background-color: #f9fafb;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-info {
+  flex: 1;
+}
+
+.transaction-description {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.transaction-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.transaction-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 15px;
+  min-width: 120px;
+  text-align: right;
+}
+
+.transaction-amount.income {
+  color: #10b981;
+}
+
+.transaction-amount.expense {
+  color: #ef4444;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.cat-food { background: #fef3c7; color: #92400e; }
+.cat-transport { background: #dbeafe; color: #1e40af; }
+.cat-entertainment { background: #fce7f3; color: #9f1239; }
+.cat-utilities { background: #e0e7ff; color: #3730a3; }
+.cat-shopping { background: #fed7aa; color: #9a3412; }
+.cat-healthcare { background: #ccfbf1; color: #115e59; }
+.cat-salary { background: #d1fae5; color: #065f46; }
+.cat-freelance { background: #e9d5ff; color: #6b21a8; }
+.cat-investment { background: #bfdbfe; color: #1e3a8a; }
+.cat-other { background: #e5e7eb; color: #374151; }
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-state svg {
+  margin-bottom: 15px;
+  opacity: 0.3;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .transaction-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .transaction-amount {
+    min-width: auto;
+  }
+
+  .delete-btn {
+    margin-left: auto;
+  }
+}
