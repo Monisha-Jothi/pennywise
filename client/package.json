@@ -2,7 +2,7 @@
   "name": "pennywise-client",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://monisha-jothi.github.io/pennywise",
+  "homepage": "https://monisha-jothi.github.io/pennywise/",
   "dependencies": {
     "axios": "^1.6.2",
     "chart.js": "^4.4.1",
